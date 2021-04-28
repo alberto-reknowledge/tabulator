@@ -1,9 +1,9 @@
 {
   "name": "tabulator-tables",
-  "version": "4.9.3",
+  "version": "4.9.4",
   "description": "Interactive table generation JavaScript library",
-  "main": "dist/js/tabulator.js",
-  "module": "dist/js/tabulator.es2015.js",
+  "main": "dist/js/tabulator.min.js",
+  "module": "dist/js/tabulator.es2015.min.js",
   "scripts": {
     "build": "gulp",
     "watch": "gulp watch",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/olifolkerd/tabulator.git"
+    "url": "https://github.com/alberto-reknowledge/tabulator.git"
   },
   "keywords": [
     "table",

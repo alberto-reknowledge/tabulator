@@ -16293,7 +16293,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 				clearTimeout(searchWordTimeout);
 
-				var character = String.fromCharCode(event.keyCode).toLowerCase();
+				var character = String.fromCharCode(char).toLowerCase();
 				searchWord += character.toLowerCase();
 
 				var match = dataItems.find(function (item) {
@@ -23800,10 +23800,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			if (typeof this.table.options.persistenceWriterFunc === "function") {
 				this.writeFunc = this.table.options.persistenceWriterFunc;
 			} else {
-				if (this.readers[this.table.options.persistenceWriterFunc]) {
-					this.writeFunc = this.readers[this.table.options.persistenceWriterFunc];
+				if (this.writers[this.table.options.persistenceWriterFunc]) {
+					this.writeFunc = this.writers[this.table.options.persistenceWriterFunc];
 				} else {
-					console.warn("Persistence Write Error - invalid reader set", this.table.options.persistenceWriterFunc);
+					console.warn("Persistence Write Error - invalid writer set", this.table.options.persistenceWriterFunc);
 				}
 			}
 		} else {

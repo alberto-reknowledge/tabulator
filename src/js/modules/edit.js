@@ -1282,7 +1282,7 @@ Edit.prototype.editors = {
 
 			clearTimeout(searchWordTimeout);
 
-			var character = String.fromCharCode(event.keyCode).toLowerCase();
+			var character = String.fromCharCode(char).toLowerCase();
 			searchWord += character.toLowerCase();
 
 			var match = dataItems.find((item) => {
